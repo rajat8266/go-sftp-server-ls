@@ -20,8 +20,8 @@ Example Configuration File:
   ],
   "Address": "127.0.0.1",
   "Port" : "2024",
-  "KeyPathSSH": "",
-  "BasePath" : "",
+  "KeyPathSSH": "**required**",
+  "BasePath" : "**required**",
   "SftpAuthorizedKeysFile": "",
 }
 ```
@@ -32,7 +32,7 @@ Path to the SSH private key used by the SFTP server for secure connections.
 Generate using `ssh-keygen -b 2048 -t rsa -f filepath.txt`
 
 - **BasePath**:
-Path to disk where data will be stored. For "user1", Files will be stored at location BasePath/Username.
+Path to disk where data will be stored. For "user1", Files will be stored at location BasePath/Username. Program should have read/write access to BasePath.
 
 - **SftpAuthorizedKeysFile**:
 Path to the file containing authorized SSH public keys for users who are allowed to connect. If this field is not set, only password authentication will be used.
