@@ -2,7 +2,7 @@
 This project implements an SFTP server that uses local disk as the backend storage system. It provides a secure, scalable, and configurable SFTP service that can be used for file transfers.
 
 ### Sftp Backend
-**Overview**: The SFTP server is built using the Go programming language, with support for secure file transfer over SSH. It handles file operations such as reading, writing, listing, renaming, and deleting files.
+**Overview**: The SFTP server is built using the Go programming language, with support for secure file transfer over SSH. It handles file operations such as reading, writing, listing, and deleting files.
 
 **Key Components**:
 - **Connection Handling**: Manages incoming SSH connections using `golang.org/x/crypto`, allowing for secure file transfer sessions.
@@ -10,7 +10,7 @@ This project implements an SFTP server that uses local disk as the backend stora
 - **Session Management**: Supports multiple concurrent SFTP sessions, with each session linked to specific storage location based on user authentication.
 
 ### Storage
-**Overview**: The project uses disk space or folder path as the primary data store, where all files uploaded via SFTP are stored and managed.
+**Overview**: The project uses disk space or folder path as the primary data store, where all files uploaded via SFTP are stored and managed. Program will automatically create folders for the users defined in config.json file if not found already.
 
 **Key Components**:
 - **User-Specific Folder**: Each user is associated with a specific folder, ensuring data isolation and security.
