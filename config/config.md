@@ -8,7 +8,7 @@ Example Configuration File:
 
 ```json
 {
-  "SftpAccounts": [
+  "Accounts": [
     {
       "Username": "user1",
       "Password": "password1",
