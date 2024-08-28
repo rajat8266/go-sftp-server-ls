@@ -20,14 +20,14 @@ Example Configuration File:
   ],
   "Address": "127.0.0.1",
   "Port" : "2024",
-  "KeyPathSSH": "**required**",
+  "SSHKeyPath": "**required**",
   "BasePath" : "**required**",
   "SftpAuthorizedKeysFile": "",
 }
 ```
 
 ### Config Fields
-- **KeyPathSSH**:
+- **SSHKeyPath**:
 Path to the SSH private key used by the SFTP server for secure connections.
 Generate using `ssh-keygen -b 2048 -t rsa -f filepath.txt`
 
